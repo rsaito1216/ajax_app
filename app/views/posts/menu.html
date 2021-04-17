@@ -79,7 +79,7 @@
 
 <div class="mainView">
   <header class="header_front">
-    <h1>アニメーションページ</h1>
+    <a  href=""><h1>アニメーションページ</h1></a>
   </header>
   <main class="front_main">
     <ul class="front_contents">
@@ -130,6 +130,8 @@
     </ul>  
   </main>
   <script>
+        // document.addEventListener("turbolinks:load", function(anima){
+
     const targetElement = document.querySelectorAll(".animationTarget");
   console.log("画面の高さ",window.innerHeight);
   document.addEventListener("scroll",function () {
@@ -144,6 +146,7 @@
     }
   }
   })
+// })
   
   </script>
 <!--ページコンテンツ-->
