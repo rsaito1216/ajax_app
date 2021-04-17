@@ -1,0 +1,235 @@
+
+<div class="el_humburger"><!--ハンバーガーボタン-->
+  <div class="el_humburger_wrapper">
+    <span class="el_humburger_bar top"></span>
+    <span class="el_humburger_bar middle"></span>
+    <span class="el_humburger_bar bottom"></span>
+  </div>
+</div>
+
+<header class="navi">
+  
+  <div class="navi_inner">
+    <div class="navi_item js_openParent"><a href="">ABOUT</a>
+        <div class="el_spChildNavOpen js_openSwitch">
+          <div class="el_spChildNavOpen_wrapper"></div>
+        </div>
+        <div class="nav_child js_openTarget">
+          <div class="nav_child_item">
+            <a href=""></a>
+            ABOUTの子ページ
+          </div>
+          <div class="nav_child_item">
+            <a href=""></a>
+            ABOUTの子ページ
+          </div>
+          <div class="nav_child_item">
+            <a href=""></a>
+            ABOUTの子ページ
+          </div>
+          <div class="nav_child_item">
+            <a href=""></a>
+            ABOUTの子ページ
+          </div>
+          <div class="nav_child_item">
+            <a  href=""></a>
+            ABOUTの子ページ
+          </div>
+        </div>
+        <div class="bl_nav_item_spToggle"></div>
+    </div>
+
+
+    <div class="navi_item js_openParent"><a href="">WORKS</a>
+        <div class="el_spChildNavOpen js_openSwitch">
+          <div class="el_spChildNavOpen_wrapper"></div>
+        </div>
+        <div class="nav_child js_openTarget">
+          <div class="nav_child_item">
+            <a class="hp_coverLink" href=""></a>
+            WORKSの子ページ
+          </div>
+          <div class="nav_child_item">
+            <a class="hp_coverLink" href=""></a>
+            WORKSの子ページ
+          </div>
+          <div class="nav_child_item">
+            <a class="hp_coverLink" href=""></a>
+            WORKSの子ページ
+          </div>
+          <div class="nav_child_item">
+            <a class="hp_coverLink" href=""></a>
+            WORKSの子ページ
+          </div>
+          <div class="nav_child_item">
+            <a class="hp_coverLink" href=""></a>
+            WORKSの子ページ
+          </div>
+        </div>
+        <div class="bl_nav_item_spToggle"></div>
+    </div>
+    <div class="navi_item"><a href="">GALLERY</a></div>
+    <div class="navi_item"><a href="">FLOW</a></div>
+    <div class="navi_item"><a href="">FAQ</a></div>
+    <div class="navi_item"><a href="">CONTACT</a></div>
+  </div>
+</header>
+
+
+
+<div class="mainView">
+  <header class="header_front">
+    <h1>アニメーションページ</h1>
+  </header>
+  <main class="front_main">
+    <ul class="front_contents">
+      <li class="animationTarget">
+        <img src="/images/portfolio/thumbnails/1.jpg" alt="">
+        <div class="contentsText">
+          <h2>Dummy Title</h2>
+          <p>
+            ここに文章。ここに文章。<br>
+            ここに文章。<br>
+            ここに文章。ここに文章。
+          </p>        
+        </div>
+      </li>
+      <li class="animationTarget">
+        <img src="/images/夜 銀河 バーチャル背景.png" alt="">
+        <div class="contentsText">
+          <h2>Dummy Title</h2>
+          <p>
+            ここに文章。ここに文章。<br>
+            ここに文章。<br>
+            ここに文章。ここに文章。
+          </p>
+        </div>
+      </li>
+      <li class="animationTarget">
+        <img src="/images/nlxl-con-06.jpg" alt="">
+        <div class="contentsText">
+          <h2>Dummy Title</h2>
+          <p>
+            ここに文章。ここに文章。<br>
+            ここに文章。<br>
+            ここに文章。ここに文章。
+          </p>
+                </div>
+      </li>
+      <li class="animationTarget">
+        <img src="/images/portfolio/thumbnails/2.jpg" alt="">
+        <div class="contentsText">
+          <h2>Dummy Title</h2>
+          <p>
+            ここに文章。ここに文章。<br>
+            ここに文章。<br>
+            ここに文章。ここに文章。
+          </p>        
+        </div>
+      </li>
+    </ul>  
+  </main>
+  <script>
+    const targetElement = document.querySelectorAll(".animationTarget");
+  console.log("画面の高さ",window.innerHeight);
+  document.addEventListener("scroll",function () {
+    for (let i = 0; i < targetElement.length; i++) {
+    const getElementDistance = targetElement[i].
+    getBoundingClientRect().top + targetElement[i].clientHeight *.6
+    if (i === 1) {
+      console.log(getElementDistance);
+    }
+    if (window.innerHeight > getElementDistance) {
+      targetElement[i].classList.add("show")
+    }
+  }
+  })
+  
+  </script>
+<!--ページコンテンツ-->
+</div>
+
+<!--CDNでjQuery読み込む-->
+<script>
+src="https://code.jquery.com/jquery-2.2.4.min.js"
+integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
+crossorigin="anonymous"</script>
+<script>
+//変数定義
+var navigationOpenFlag = false;
+var navButtonFlag = true;
+var focusFlag = false;
+ 
+//toggle
+$(function(){
+  $(document).on('click','.js_openSwitch',function(){
+    $(this).parent('.js_openParent').find(' > .js_openTarget').slideToggle("fast");
+    $(this).parent('.js_openParent').toggleClass('js_fire');
+  });
+});
+ 
+//ハンバーガーメニュー
+    $(function(){
+ 
+      $(document).on('click','.el_humburger',function(){
+        if(navButtonFlag){
+          spNavInOut.switch();
+          //一時的にボタンを押せなくする
+          setTimeout(function(){
+            navButtonFlag = true;
+          },200);
+          navButtonFlag = false;
+        }
+      });
+      $(document).on('click touchend', function(event) {
+        if (!$(event.target).closest('.navi,.el_humburger').length && $('body').hasClass('js_humburgerOpen') && focusFlag) {
+          focusFlag = false;
+          //scrollBlocker(false);
+          spNavInOut.switch();
+        }
+      });
+    });
+ 
+//ナビ開く処理
+function spNavIn(){
+  $('body').removeClass('js_humburgerClose');
+  $('body').addClass('js_humburgerOpen');
+  setTimeout(function(){
+    focusFlag = true;
+  },200);
+  setTimeout(function(){
+    navigationOpenFlag = true;
+  },200);
+}
+ 
+//ナビ閉じる処理
+function spNavOut(){
+  $('body').removeClass('js_humburgerOpen');
+  $('body').addClass('js_humburgerClose');
+  setTimeout(function(){
+    $(".uq_spNavi").removeClass("js_appear");
+    focusFlag = false;
+  },200);
+  navigationOpenFlag = false;
+}
+ 
+//ナビ開閉コントロール
+var spNavInOut = {
+  switch:function(){
+    if($('body.spNavFreez').length){
+      return false;
+    }
+    if($('body').hasClass('js_humburgerOpen')){
+     spNavOut();
+    } else {
+     spNavIn();
+    }
+  }
+};
+</script>
+
+<footer>
+  <p>Copyright(C) Hair OLIVE ALL RIGHTS RESERVED.</p>
+</footer>
+
+
