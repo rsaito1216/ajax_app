@@ -294,7 +294,7 @@ padding: 0 15px 15px;
     transform:translateZ(0) translateX(0); }
     @media (max-width: 840px) {
       .navi {
-        padding: 150px 5% 0; }
+        padding: 100px 5% 0; }
       .js_humburgerOpen .navi {
         width: 100%;} }
  
