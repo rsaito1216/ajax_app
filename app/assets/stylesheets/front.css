@@ -141,60 +141,66 @@ main .front_contents li.show img{
     max-width: 330px;
     width: 100%;
     margin: 50px auto 50px;
-   } 
-    .header_front h1{
-      font-size: 25px;
-      font-weight: bold;
-      margin-bottom: 0px;
-      white-space: nowrap;
-      animation: titleAnimation 2.0s;
-      Color: white;
-    }
-    .header_front{
-      padding: 20px 20px;
-    }
-    .front_contents h2{
-      font-size:  14px;
-      font-weight: bold;
-      white-space: nowrap;
-      background-color: rgba(20, 20, 20, .8);
-      padding: 5px 10px;
-      line-height: 1.4;
-      letter-spacing: .08em;
-      border-radius: 5px;
-      opacity: 0;
-      transform: translateY(20px);
-      transition: 1s;
-      Color: white;
-    
-    }
-    .contentsText {
-      display: flex;
-      flex-direction: column;
-      align-items: flex-end;
-      position: absolute;
-      top: 10px;
-    }
-    .front_contents p{
-      line-height: 1.2;
-      background-color: #555;
-      font-size: 10px;
-            display:block;
+  } 
+  .header_front h1{
+    font-size: 25px;
+    font-weight: bold;
+    margin-bottom: 0px;
+    white-space: nowrap;
+    animation: titleAnimation 2.0s;
+    Color: white;
+  }
+  .header_front{
+    padding: 20px 20px;
+  }
 
-      padding: 3px;
-      max-width: 100px;
-      margin-top: 8px;
-      border-radius: 5px;
-      opacity: 0;
-      transform: translateX(20px);
-      transition: 1s;
-      Color: white;
+  .header {
+    width: 80%;
+    margin: 0 auto 0 0;
+  }
 
-    }
-    .front_contents li:not(:first-of-type) {
-      margin-top: 80px;
-      border-radius: 5px;
-    }
+  .front_contents h2{
+    font-size:  14px;
+    font-weight: bold;
+    white-space: nowrap;
+    background-color: rgba(20, 20, 20, .8);
+    padding: 5px 10px;
+    line-height: 1.4;
+    letter-spacing: .08em;
+    border-radius: 5px;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: 1s;
+    Color: white;
+  
+  }
+  .contentsText {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    position: absolute;
+    top: 10px;
+  }
+  .front_contents p{
+    line-height: 1.2;
+    background-color: #555;
+    font-size: 10px;
+          display:block;
+
+    padding: 3px;
+    max-width: 100px;
+    margin-top: 8px;
+    border-radius: 5px;
+    opacity: 0;
+    transform: translateX(20px);
+    transition: 1s;
+    Color: white;
+
+  }
+  .front_contents li:not(:first-of-type) {
+    margin-top: 80px;
+    border-radius: 5px;
+  }
 
 
 }
