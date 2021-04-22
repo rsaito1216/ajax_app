@@ -12,7 +12,7 @@
     background: rgba(0, 0, 0, 0.6);
 }
 
-.header_container {
+.H_header_container {
     width: 90%;
     margin: 0 auto;
     display: flex;
@@ -441,7 +441,7 @@ article .C_head {
 .sentence{
   position: absolute;
   top: 270px;
-  left: 15px;
+  left: 35px;
   color: white;
 }
 
@@ -459,27 +459,30 @@ article .C_head {
   font-size: 30px;
   position: absolute;
   top: 30px;
-  left: 20px;
+  left: -20px;
   font-weight: bold;
 }
 
 .sentence h3{
   position: relative;
-  font-size: 15px;
+  font-size: 18px;
   font-weight: bold;
   height: 50px;
-  top: 10px;
+  top: -10px;
   width: 200px;
   overflow: hidden;
 }
 
 .sentence p{
   position: relative;
+  color:  rgb(65, 9, 22) ;
   font-size: 10px;
   height: 80px;
   width: 200px;
   overflow: hidden;
   margin-top: 10px;
+  font-weight: bold;
+
 }
 
 .sentence h1 .text{
