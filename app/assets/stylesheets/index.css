@@ -437,7 +437,7 @@ article .C_head {
  
 /* --------------レスポンシブーーーーーーーーーーー */
 
-@media (max-width: 500px) {
+@media (max-width: 840px) {
 .sentence{
   position: absolute;
   top: 270px;
@@ -475,13 +475,14 @@ article .C_head {
 
 .sentence p{
   position: relative;
-  color:  rgb(65, 9, 22) ;
+  color:  rgb(226, 210, 214) ;
   font-size: 10px;
   height: 80px;
   width: 200px;
   overflow: hidden;
   margin-top: 10px;
   font-weight: bold;
+  background-color: rgba(183, 25, 63, 0.4) ;
 
 }
 

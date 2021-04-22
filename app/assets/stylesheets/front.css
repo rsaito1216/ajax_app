@@ -136,7 +136,7 @@ main .front_contents li.show img{
 /* --------------------------------------------- */
 
 
-@media (max-width: 500px) {
+@media (max-width: 840px) {
   .front_main {
     max-width: 330px;
     width: 100%;
