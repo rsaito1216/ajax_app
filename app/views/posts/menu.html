@@ -11,91 +11,142 @@
 </head>
 <body>
   
+  
+  <!-- <div>
+    <ul class="menu">
+      <li class="menu-list">メニュー</a></li>
+      <li class="menu-list">フロント</a></li>
+      <li class="menu-list">メニュー3</li>
+      <li class="menu-list">メニュー4</li>
+      <li class="menu-list">メニュー5</li>
+    </ul>
+  </div> -->
+  
 
-
-
-<div class="el_humburger"><!--ハンバーガーボタン-->
-  <div class="el_humburger_wrapper">
-    <span class="el_humburger_bar top"></span>
-    <span class="el_humburger_bar middle"></span>
-    <span class="el_humburger_bar bottom"></span>
-  </div>
-</div>
 
 <header class="navi">
   
   <div class="navi_inner">
-    <div class="navi_item js_openParent"><a href="">ABOUT</a>
+    <div class="navi_item"><a href="">Home</a></div>
+
+    <div class="navi_item js_openParent"><a href="">About</a>
         <div class="el_spChildNavOpen js_openSwitch">
           <div class="el_spChildNavOpen_wrapper"></div>
         </div>
         <div class="nav_child js_openTarget">
           <div class="nav_child_item">
-            <a href=""></a>
-            ABOUTの子ページ
+            <a href="/tests/hover"></a>
+            別ページに移動
           </div>
           <div class="nav_child_item">
             <a href=""></a>
-            ABOUTの子ページ
+            Aboutの子ページ
           </div>
           <div class="nav_child_item">
             <a href=""></a>
-            ABOUTの子ページ
+            Aboutの子ページ
           </div>
-          <div class="nav_child_item">
-            <a href=""></a>
-            ABOUTの子ページ
-          </div>
-          <div class="nav_child_item">
-            <a  href=""></a>
-            ABOUTの子ページ
-          </div>
+        
         </div>
         <div class="bl_nav_item_spToggle"></div>
     </div>
 
 
-    <div class="navi_item js_openParent"><a href="">WORKS</a>
+    <div class="navi_item js_openParent"><a href="">Works</a>
         <div class="el_spChildNavOpen js_openSwitch">
           <div class="el_spChildNavOpen_wrapper"></div>
         </div>
         <div class="nav_child js_openTarget">
           <div class="nav_child_item">
             <a class="hp_coverLink" href=""></a>
-            WORKSの子ページ
+            Worksの子ページ
           </div>
           <div class="nav_child_item">
             <a class="hp_coverLink" href=""></a>
-            WORKSの子ページ
+            Worksの子ページ
           </div>
           <div class="nav_child_item">
             <a class="hp_coverLink" href=""></a>
-            WORKSの子ページ
+            Worksの子ページ
           </div>
-          <div class="nav_child_item">
-            <a class="hp_coverLink" href=""></a>
-            WORKSの子ページ
-          </div>
-          <div class="nav_child_item">
-            <a class="hp_coverLink" href=""></a>
-            WORKSの子ページ
-          </div>
+          
         </div>
         <div class="bl_nav_item_spToggle"></div>
     </div>
-    <div class="navi_item"><a href="">GALLERY</a></div>
-    <div class="navi_item"><a href="">FLOW</a></div>
-    <div class="navi_item"><a href="">FAQ</a></div>
-    <div class="navi_item"><a href="">CONTACT</a></div>
+    <div class="navi_item"><a href="">Service</a></div>
+    <div class="navi_item"><a href="/tests/hover">Flow</a></div>
+    <div class="navi_item"><a href="">Contact</a></div>
   </div>
+
 </header>
 
+<div class="anime">
+  <video src="/images/opening.mp4" playsinline autoplay muted id="opening_video"></video>
+</div>
 
+<header class="animationLogo">
+  <div class="header_wrapper">
+      <video id="video" playsinline autoplay muted>
+          <source src="/images/header_video.mp4" type="video/mp4">
+      </video>
+  </div>
+  <div class="header_background">
+      <div class="header">
+          <div class="header_container">
+              <div class="header_logo">
+                  <a href="">
+                      <img src="/images/logo.png" alt="" class="enji">
+                  </a>
+              </div>
+              <div class="menu">
+                <ul>
+                    <li><a href="">Home</a></li>
+                    <li><a href="#">About<br>🔻</a>
+                      <ul>
+                        <li><a href="/tests/hover">別ページに移動</a></li>
+                        <li><a href="#">Aboutの子ページ</a></li>
+                        <li><a href="#">Aboutの子ページ</a></li>
+                      </ul>
+                    </li>
+                      
+                    <li><a href="#">Works<br>🔻</a>
+                      <ul>
+                        <li><a href="#">Worksの子ページ</a></li>
+                        <li><a href="#">Worksの子ページ</a></li>
+                        <li><a href="#">Worksの子ページ</a></li>
+                      </ul>
+                    </li>
+                    <li><a href="#">Service</a></li>
+                    <li><a href="#">Flow</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+              </div>
+              <div class="el_humburger"><!--ハンバーガーボタン-->
+                <div class="el_humburger_wrapper">
+                  <span class="el_humburger_bar top"></span>
+                  <span class="el_humburger_bar middle"></span>
+                  <span class="el_humburger_bar bottom"></span>
+                </div>
+              </div>
+              
+          </div>
+          
+      </div>
+      
+  </div>
+  
+  <div class="header_front">
+    <a  href=""><h1>アニメーションページ</h1></a>
+  </div>
+<div class="typing">
+  <div class="typed_wrap">
+    <h1><span class="typed"></span></h1>
+  </div>
+</div>
 
 <div class="mainView">
-  <header class="header_front">
-    <a  href=""><h1>アニメーションページ</h1></a>
-  </header>
+  
+  
   <main class="front_main">
     <ul class="front_contents">
       <li class="animationTarget">
@@ -110,15 +161,26 @@
         </div>
       </li>
       <li class="animationTarget">
-        <img src="/images/portfolio/thumbnails/4.jpg" alt="">
-        <div class="contentsText">
-          <h2>Dummy Title</h2>
-          <p>
-            ここに文章。ここに文章。<br>
-            ここに文章。<br>
-            ここに文章。ここに文章。
-          </p>
-        </div>
+        <!-- <div class="front_Vcontainer"> -->
+
+          <img src="/images/portfolio/thumbnails/4.jpg">
+          <!-- <div class="front_box-1"></div>
+          <div class="front_box-2"></div>
+          <div class="front_content">
+              <h2>xxxxxxxxxx</h2>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Placeat repellat, dolore exercitationem non, ad provident iusto fuga vel voluptas, unde magnam molestiae est! Odit soluta dolores, aut illo eos officia!</p>
+          </div>
+        </div> -->
+          <div class="contentsText">
+            <h2>Dummy Title</h2>
+            <p>
+              ここに文章。ここに文章。<br>
+              ここに文章。<br>
+              ここに文章。ここに文章。
+            </p>
+          </div>
+      
+        
       </li>
       <li class="animationTarget">
         <img src="/images/portfolio/thumbnails/6.jpg" alt="">
@@ -144,28 +206,62 @@
       </li>
     </ul>  
   </main>
-  <script>
-        // document.addEventListener("turbolinks:load", function(anima){
-
-    const targetElement = document.querySelectorAll(".animationTarget");
-  console.log("画面の高さ",window.innerHeight);
-  document.addEventListener("scroll",function () {
-    for (let i = 0; i < targetElement.length; i++) {
-    const getElementDistance = targetElement[i].
-    getBoundingClientRect().top + targetElement[i].clientHeight *.6
-    if (i === 1) {
-      console.log(getElementDistance);
-    }
-    if (window.innerHeight > getElementDistance) {
-      targetElement[i].classList.add("show")
-    }
-  }
-  })
-// })
   
-  </script>
+
+
+  
 <!--ページコンテンツ-->
+
+
+<div class="line"></div>
+<div class="footer_test">＜パソコン閲覧用画像＞マウスを載せるとタイトルが出てきます</div>
+
+  <div class="P_container">
+    <div class="photo_no1">
+      <div class="P_table">
+        <img src="/images/fireworks6 (1).jpg" alt="">
+        <span class="P_text">Aaa></span>
+      </div>
+    </div>
+    <div class="photo_no2">
+      <div class="P_table">
+        <img src="/images/fireworks2 (1).jpg" alt="">
+        <span class="P_text">Bbb></span>
+      </div>
+    </div>
+    <div class="photo_no3">
+      <div class="P_table">
+        <img src="/images/fireworks6 (1).jpg" alt="">
+        <span class="P_text">Ccc></span>
+      </div>
+    </div>
+  </div>
+
+
+
+  <div class="line"></div>
 </div>
+
+<script>
+  // document.addEventListener("turbolinks:load", function(anima){
+
+const targetElement = document.querySelectorAll(".animationTarget");
+console.log("画面の高さ",window.innerHeight);
+document.addEventListener("scroll",function () {
+for (let i = 0; i < targetElement.length; i++) {
+const getElementDistance = targetElement[i].
+getBoundingClientRect().top + targetElement[i].clientHeight *.6
+if (i === 1) {
+console.log(getElementDistance);
+}
+if (window.innerHeight > getElementDistance) {
+targetElement[i].classList.add("show")
+}
+}
+})
+// })
+
+</script>
 
 <!--CDNでjQuery読み込む-->
 <script>
@@ -244,14 +340,43 @@ var spNavInOut = {
   }
 };
 </script>
-
-
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/1.1.1/typed.min.js"></script>
+<script>
+  $(function () {
+    $(".animationLogo").css("display","none");
+    setTimeout(function() {
+      $('.anime').fadeOut();
+    },8000);
+  })
+  $(function () {
+    $(".animationLogo").css({opacity:'0'});
+    setTimeout(function() {
+      $(".animationLogo").css("display","block");
+      $(".animationLogo").animate({opacity:'1'},2000);
+    },8200);
+  });
+</script>
+<script>
+  $(function() {
+    $(".typed").typed({
+      strings: ["youtubeを見て<br>作ったモデルサイト.","Let' scroll down."],
+      typeSpeed: 100,
+      startDelay: 8200,
+      backSpeed: 20,
+      backDelay: 1000,
+      loop: true,
+      loopCount: 1,
+      showCursor: false
+    });
+  });
+</script>
 </body>
-
 
 <footer>
   <p>Copyright(C) Hair OLIVE ALL RIGHTS RESERVED.</p>
 </footer>
+
 
 
 </html>

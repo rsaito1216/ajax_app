@@ -3,5 +3,6 @@ Rails.application.routes.draw do
   post 'posts', to: 'posts#create'
   get 'posts/:id', to: 'posts#checked'
   get "posts/menu"
+  get "tests/hover"
 
 end

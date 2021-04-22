@@ -23,4 +23,5 @@ class PostsController < ApplicationController
 
   def menu
   end
+
 end
