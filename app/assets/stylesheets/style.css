@@ -746,7 +746,7 @@ footer{
   position: absolute;
   width: 100vw;
   text-align: center;
-  top: 30%;
+  top: 25%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
